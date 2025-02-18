@@ -13,6 +13,7 @@
 
 body{
     background-color: violet;
+    background-image: url(/cormorant-9399801_1280.jpg);
 }
 
 h1{
@@ -34,5 +35,9 @@ p {
     
 }
 .hex{background-color: #FF5733;}
-.rgb{background-color: rgba(255, 87, 10, 0,1);}
+.rgb{background-color: gba(255, 87, 10, 0,1);}
 .hsl{background-color: hsl(14, 100%, 60%);}
+
+.rgba{
+    background-color: rgba(123, 97, 19, 50%);
+}
