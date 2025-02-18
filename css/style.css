@@ -1,3 +1,38 @@
-body{
-    background-color: blueviolet;
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+body{
+    background-color: violet;
+}
+
+h1{
+    color: #FF5733 
+}
+
+p {
+    color: rosybrown;
+    font-size: 1,2em;
+}
+
+.bg-test{
+    border: 1px solid #333;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 25px;
+    
+    
+    
+}
+.hex{background-color: #FF5733;}
+.rgb{background-color: rgba(255, 87, 10, 0,1);}
+.hsl{background-color: hsl(14, 100%, 60%);}
