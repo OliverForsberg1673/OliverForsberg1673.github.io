@@ -1,43 +1,111 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+.noto-sans-runic-regular {
+    font-family: "Noto Sans Runic", serif;
+    font-weight: 400;
+
+}
+
+
+
+.monsieur-la-doulaise-regular {
+    font-family: "Monsieur La Doulaise", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+* {
+    /* font-family: Arial, Helvetica, sans-serif; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-body{
+html {
     background-color: violet;
-    background-image: url(/cormorant-9399801_1280.jpg);
+    background-image: url(/Lektion3/cormorant-9399801_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+
 }
 
-h1{
-    color: #FF5733 
+body {
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 90%);
 }
+
+h1 {
+    color: black;
+
+    font-size: 6rem;
+    /* font-family: "Monsieur La Doulaise"; */
+    background-color: blueviolet;
+}
+
+
+
 
 p {
-    color: rosybrown;
-    font-size: 1,2em;
+
+    font-size: 4rem;
+
+    font-family: "Noto Sans Runic", serif;
 }
 
-.bg-test{
+.bg-test {
     border: 1px solid #333;
     height: 250px;
     width: 250px;
     margin-bottom: 25px;
-    
-    
-    
-}
-.hex{background-color: #FF5733;}
-.rgb{background-color: gba(255, 87, 10, 0,1);}
-.hsl{background-color: hsl(14, 100%, 60%);}
 
-.rgba{
+
+
+}
+
+.hex {
+    background-color: #FF5733;
+}
+
+.rgb {
+    background-color: gba(255, 87, 10, 0, 1);
+}
+
+.hsl {
+    background-color: hsl(240, 100%, 50%);
+}
+
+.rgba {
     background-color: rgba(123, 97, 19, 50%);
+}
+
+.linear-gradient {
+    background: linear-gradient(#000, #fff);
+}
+
+.radial-gradient {
+    background: radial-gradient(circle, #000, #fff);
+}
+
+.pt-text {
+    font-size: 12rem;
+    font-style: italic;
+}
+
+.px-text {
+    font-size: 7rem;
+    font-weight: 200;
+
+}
+
+.bold-text {
+    font-weight: 900;
+
 }
