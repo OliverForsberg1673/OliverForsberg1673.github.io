@@ -1,0 +1,12 @@
+h1{
+    border: 1px solid black;
+    background-color: hotpink;
+    width: 1fr;
+    height: 10rem;
+    
+}
+
+header{
+    border: 1px solid palevioletred;
+    height: 2rem;
+}
