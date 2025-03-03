@@ -94,6 +94,7 @@ p{
     overflow: hidden;
     margin-left: 5px;
     margin-right: 5px;
+    word-wrap: break-word;
 }
 
 h2:hover{
@@ -114,7 +115,7 @@ p:hover{
 
 @media screen and (max-width: 600px)   {
   p{
-    height: 50rem;
+    height: 52rem;
 
   }
  .h22{
