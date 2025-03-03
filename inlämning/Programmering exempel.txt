@@ -1,0 +1,183 @@
+using System;
+using System.Collections.Generic;
+
+
+
+
+namespace Program
+{
+
+     class Blog
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Välkommen till bloggen!");
+            bool programON = true; //Variabel som håller igång loopen
+            int menunumber = 0; //Variabeln som tar emot menyvalet 
+            DateTime dateTime = DateTime.Now;
+            List<string[]> BlogpostCollection = new List<string[]>(); //Vektorlistan som lagrar alla titlar och inlägg
+            List<DateTime[]> Datelogs = new List<DateTime[]>();
+            while (programON)        
+            {
+               
+                Console.WriteLine("[1] Skriv nytt inlägg i bloggen");
+                Console.WriteLine("[2] Sök inlägg i bloggen");
+                Console.WriteLine("[3] Skriv ut alla blogginlägg");
+                Console.WriteLine("[4] Avsluta"); //menyn presenteras 
+                
+                string menuchoice = Console.ReadLine();
+                try /*Här converterar vi ett string värde till ett int värde och om det
+                    inte går utav anledningen att en bokstav skrivs in hänvisar programmet användaren
+                    till att skriva en siffra istället */
+                {
+                    menunumber = Int32.Parse(menuchoice);     
+                }
+                catch
+                {
+                    Console.WriteLine("ERROR Var god och skriv in en siffra");
+                }
+
+                switch (menunumber)
+                {
+                  case 1:
+                   {
+                            dateTime = DateTime.Now;
+                            DateTime[] Date = new DateTime[1];
+                            string[] Blogpost = new string[2]; //en string vektor etableras                          
+                            Console.WriteLine("Var god och skriv en titel");
+                            Blogpost[0] = Console.ReadLine();
+
+                            Console.WriteLine("Var god och skriv meddelandet");
+                            Blogpost[1] = Console.ReadLine();
+                            /* Här sparar vi både titeln och inlägget i string vektorn på index plats 0 och 1
+                               Sedan lägrar vi den vektorn i vektorlistan */
+                            Date[0] = dateTime;
+                            Datelogs.Add(Date);
+                            BlogpostCollection.Add(Blogpost);
+                            
+                            break;
+                   }
+                  
+                    case 2:
+                   {
+                            string Searchvalue; //sökvärdet som vi sedan matchar med listan för att se om den titlen existerar i systemet
+                            bool Titlefound = false; //etablerar en bool som gör att sökningen inte kan repetera alla lagrade vektorer 
+                            Console.WriteLine("Skriv in en titel!");
+                            Searchvalue = Console.ReadLine();
+                            foreach (string[] Vektor in BlogpostCollection)
+                            {
+                                if (Searchvalue.ToUpper() == Vektor[0].ToUpper()) //Jämför två stringvärden, spelar ingen roll om dem är i små eller stora bokstäver
+                                {
+                                    Console.WriteLine("Ett bloginlägg med titeln" + ":" + Vektor[0] + " " + "Finns");
+                                    Titlefound = true;
+                                }
+                                  
+                              
+
+                                   
+                            }
+                             if(Titlefound == false) // om sökvärdet ej hittas förblir boolvärde titlefound falsk och därmed går meddelandet att inlägget inte finns fram
+                            {
+                                Console.WriteLine("Ett bloginlägg med titeln" + ":" + Searchvalue + " " + "Finns inte ");
+                            } 
+
+
+
+                            break;
+                   }
+                  
+                    case 3:
+                   {
+                            bool datecheck;
+                           
+                     foreach (string[] Vektor in BlogpostCollection)
+                            {    datecheck = false;
+
+                                Console.WriteLine("Titel :" + Vektor[0] + "\r\n" + "Inlägg :" + Vektor[1]);
+                                foreach (DateTime[] Data in Datelogs)   //det funkar inte riktigt som planerat datum funktion. Jag är redan sen med uppgiften så jag lämnar det som det är      
+                                if(datecheck == false)
+                                    {
+                                        Console.WriteLine(Data[0]);
+                                        datecheck = true;
+
+                                    }
+                                  
+                            } //Skriver ut alla titlar och inlägg och datum
+                     
+
+                            break;
+                   }
+
+                   
+                    case 4:
+                   {
+                       programON = false;
+
+                            break;
+                   }
+                    default:
+                        Console.WriteLine("Var god och skriv in en siffra förknippad med ett av menyvalen"); //andra säkerhetsmetoden då ifall en ogiltig siffra skrivs
+                        break;
+            
+
+
+
+                            
+
+
+
+
+
+
+                        
+                            
+                             
+                       
+                 }
+
+
+
+
+
+            }
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
