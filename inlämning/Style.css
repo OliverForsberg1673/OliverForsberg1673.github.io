@@ -1,10 +1,10 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-a{
+a {
   color: red;
 }
 
@@ -29,16 +29,17 @@ a{
 
 
 
-body{
-    background-color: rgb(189, 179, 233);
-    font-family: "Open Sans";
-   
-    background-image: linear-gradient(rgba(8, 41, 15, 0.7), rgba(8, 41, 15, 0.7)), url("/inlämning/Forest.jpg");;
+body {
+  background-color: rgb(189, 179, 233);
+  font-family: "Open Sans";
+
+  background-image: linear-gradient(rgba(8, 41, 15, 0.7), rgba(8, 41, 15, 0.7)), url("/inlämning/Forest.jpg");
+  ;
 }
 
 
 
-h2{
+h2 {
   border: solid;
   border-radius: 15px;
   background-color: rgb(61, 99, 138);
@@ -46,103 +47,104 @@ h2{
   height: 5rem;
   text-align: center;
   margin-top: 1rem;
-color: rgb(0, 0, 0);
-font-size: 2rem;
-font-family: "Roboto";
-margin-left: 5px;
-    margin-right: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-family: "Roboto";
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.h22{
-    border: solid;
-    
-    background-color: rgb(61, 99, 138);
-    width: 1fr;
-    height: 15rem;
-    text-align: center;
+.h22 {
+  border: solid;
+
+  background-color: rgb(61, 99, 138);
+  width: 1fr;
+  height: 15rem;
+  text-align: center;
   overflow: hidden;
-    margin-top: 1rem;
+  margin-top: 1rem;
   color: rgb(0, 0, 0);
   font-size: 2rem;
   margin-left: 5px;
-    margin-right: 5px;
-    margin-bottom: 3rem;
+  margin-right: 5px;
+  margin-bottom: 3rem;
 }
 
-.h23{
+.h23 {
   border: solid;
-  
+
   background-color: rgb(61, 99, 138);
   width: 1fr;
   height: 20rem;
   text-align: center;
   margin-top: 1rem;
-color: rgb(0, 0, 0);
- font-size: 2rem;
- margin-left: 5px;
-    margin-right: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-p{
-    border: solid;
-    background-color: rgb(61, 99, 138);
-    width: 1fr;
-    height: 15rem;
-    margin-top: 1rem;
-    font-size: 30px;
-    text-align: left;
-    overflow: hidden;
-    margin-left: 5px;
-    margin-right: 5px;
-    word-wrap: break-word;
+p {
+  border: solid;
+  background-color: rgb(61, 99, 138);
+  width: 1fr;
+  height: 15rem;
+  margin-top: 1rem;
+  font-size: 30px;
+  text-align: left;
+  overflow: hidden;
+  margin-left: 5px;
+  margin-right: 5px;
+  word-wrap: break-word;
 }
 
-h2:hover{
-  transition-duration: 0,5;
+h2:hover {
+  transition-duration: 0, 5;
   background-color: rgb(129, 166, 202);
 }
 
-.h22:hover{
-  transition-duration: 0,5;
+.h22:hover {
+  transition-duration: 0, 5;
   background-color: rgb(129, 166, 202);
 }
 
-p:hover{
-  transition-duration: 0,5;
+p:hover {
+  transition-duration: 0, 5;
   background-color: rgb(129, 166, 202);
 }
 
 
-@media screen and (max-width: 600px)   {
-  p{
+@media screen and (max-width: 600px) {
+  p {
     height: 52rem;
 
   }
- .h22{
-  height: 25rem;
-   
- }
+
+  .h22 {
+    height: 25rem;
+
+  }
 
 
 
 }
 
 
-  
-footer{
+
+footer {
   border: solid rgb(0, 0, 0);
-  background-color:rgb(61, 99, 138);
+  background-color: rgb(61, 99, 138);
   color: black;
   height: 3rem;
   width: 1fr;
   margin-top: 2rem;
   text-align: center;
   font-size: 2rem;
-  
+
 }
-    
-footer:hover{
-  transition-duration: 0,5;
+
+footer:hover {
+  transition-duration: 0, 5;
   background-color: rgb(129, 166, 202);
 }
 
@@ -154,7 +156,8 @@ footer:hover{
 
 .header {
   overflow: hidden;
-  background-color: rgb(61, 99, 138);;
+  background-color: rgb(61, 99, 138);
+  ;
   padding: 20px 10px;
 }
 
@@ -196,44 +199,45 @@ footer:hover{
     display: block;
     text-align: left;
   }
+
   .header-right {
     float: none;
   }
 }
 
-.Object{
+.Object {
   display: grid;
   border: solid;
   width: 1fr;
   height: 5rem;
-  grid-template-columns: 200px 200px ;
+  grid-template-columns: 200px 200px;
   padding: 3rem;
   margin-top: 2rem;
   text-align: left;
 }
 
-.container1{
+.container1 {
   margin-top: 3rem;
   font-size: 30px;
   overflow: hidden;
   word-break: normal;
 }
 
-.pic-container{
+.pic-container {
   display: grid;
   grid-template-columns: 64px 64px 64px 64px;
-  
- 
+
+
   height: 64px;
   width: 64px;
- 
+
   margin-top: 1rem;
   margin-left: 1rem;
   color: red;
 }
 
 
-.code-container{
+.code-container {
 
   text-align: center;
   font-size: 2rem;
@@ -244,15 +248,15 @@ footer:hover{
 
 }
 
-a:hover{
+a:hover {
   transform-origin: 2s;
   color: rgb(6, 117, 21);
 }
- 
 
 
 
-.example0{
+
+.example0 {
   text-align: center;
   font-size: 2rem;
   font-family: "Roboto";
@@ -260,19 +264,19 @@ a:hover{
   margin-top: 2rem;
 }
 
-.example{
+.example {
   background-image: url("/inlämning/Iceberg.jpg");
 }
 
-.example1{
+.example1 {
   background-image: url("/inlämning/Forest.jpg");
 }
 
-.example2{
+.example2 {
   background-image: url("/inlämning/Moon.jpg");
 }
 
-.example3{
+.example3 {
   background-image: url("/inlämning/The\ sun.jpg");
 }
 
@@ -288,20 +292,21 @@ a:hover{
 
 
 
-body, html {
-    height: 100%;
-    
+body,
+html {
+  height: 100%;
+
 }
 
 
 .hero-image {
-  
+
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("/inlämning/backround1.avif");
 
-  
+
   height: 50%;
 
-  
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -309,32 +314,32 @@ body, html {
 }
 
 .hero-image2 {
-   
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("/inlämning/hero2.jpg");
-  
-    
-    height: 50%;
-  
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
 
-  .hero-image3 {
-   
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("/inlämning/hero3.jpg");
-  
-    
-    height: 50%;
-  
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("/inlämning/hero2.jpg");
+
+
+  height: 50%;
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-image3 {
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("/inlämning/hero3.jpg");
+
+
+  height: 50%;
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
 
 
@@ -347,4 +352,3 @@ body, html {
   transform: translate(-50%, -50%);
   color: white;
 }
-
