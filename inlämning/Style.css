@@ -49,6 +49,8 @@ h2{
 color: rgb(0, 0, 0);
 font-size: 2rem;
 font-family: "Roboto";
+margin-left: 5px;
+    margin-right: 5px;
 }
 
 .h22{
@@ -61,6 +63,8 @@ font-family: "Roboto";
     margin-top: 1rem;
   color: rgb(0, 0, 0);
   font-size: 2rem;
+  margin-left: 5px;
+    margin-right: 5px;
 }
 
 .h23{
@@ -73,6 +77,8 @@ font-family: "Roboto";
   margin-top: 1rem;
 color: rgb(0, 0, 0);
  font-size: 2rem;
+ margin-left: 5px;
+    margin-right: 5px;
 }
 
 p{
@@ -84,7 +90,8 @@ p{
     font-size: 30px;
     text-align: left;
     overflow: hidden;
-    
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 h2:hover{
@@ -105,11 +112,11 @@ p:hover{
 
 @media screen and (max-width: 600px)   {
   p{
-    height: 35rem;
+    height: 40rem;
 
   }
  .h22{
-  height: 10rem;
+  height: 15rem;
 
  }
 
