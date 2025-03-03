@@ -58,13 +58,15 @@ margin-left: 5px;
     
     background-color: rgb(61, 99, 138);
     width: 1fr;
-    height: 8rem;
+    height: 10rem;
     text-align: center;
+  
     margin-top: 1rem;
   color: rgb(0, 0, 0);
   font-size: 2rem;
   margin-left: 5px;
     margin-right: 5px;
+    margin-bottom: 2rem;
 }
 
 .h23{
@@ -116,13 +118,15 @@ p:hover{
 
   }
  .h22{
-  height: 20rem;
-   overflow: hidden;
+  height: 10rem;
+   
  }
 
 
 
 }
+
+
   
 footer{
   border: solid rgb(0, 0, 0);
