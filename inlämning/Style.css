@@ -112,12 +112,12 @@ p:hover{
 
 @media screen and (max-width: 600px)   {
   p{
-    height: 45rem;
+    height: 50rem;
 
   }
  .h22{
   height: 20rem;
-
+   overflow: hidden;
  }
 
 
