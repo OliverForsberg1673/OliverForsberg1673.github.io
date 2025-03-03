@@ -60,7 +60,7 @@ margin-left: 5px;
     width: 1fr;
     height: 15rem;
     text-align: center;
-  
+  overflow: hidden;
     margin-top: 1rem;
   color: rgb(0, 0, 0);
   font-size: 2rem;
