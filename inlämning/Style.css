@@ -70,25 +70,13 @@ h2 {
   margin-bottom: 3rem;
 }
 
-.h23 {
-  border: solid;
 
-  background-color: rgb(61, 99, 138);
-  width: 1fr;
-  height: 20rem;
-  text-align: center;
-  margin-top: 1rem;
-  color: rgb(0, 0, 0);
-  font-size: 2rem;
-  margin-left: 5px;
-  margin-right: 5px;
-}
 
 p {
   border: solid;
   background-color: rgb(61, 99, 138);
   width: 1fr;
-  height: 15rem;
+  height: 17rem;
   margin-top: 1rem;
   font-size: 30px;
   text-align: left;
@@ -113,16 +101,19 @@ p:hover {
   background-color: rgb(129, 166, 202);
 }
 
+p::before{
+  text-wrap: normal;
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   p {
-    height: 52rem;
-
+    
+    font-size: 18px;
   }
 
   .h22 {
-    height: 25rem;
-
+    
+    font-size: 18px;
   }
 
 
